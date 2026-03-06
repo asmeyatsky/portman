@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "assignments": {
+    "claudeguard": {
+      "port": 8460,
+      "assigned_at": "2026-03-05T09:00:00Z"
+    },
+    "forge": {
+      "port": 8450,
+      "assigned_at": "2026-03-05T09:05:00Z",
+      "notes": "SaaS generator"
+    },
+    "traderbot": {
+      "port": 8420,
+      "assigned_at": "2026-03-05T08:12:00Z",
+      "notes": "FastAPI backend"
+    }
+  },
+  "config": {
+    "default_range_start": 8400,
+    "default_range_end": 8999
+  }
+}
