@@ -34,8 +34,10 @@ pub fn import(store: &dyn RegistryStore, file: &str, merge: bool) -> Result<(), 
         let mut registry = store.load()?;
         let mut added = 0;
         for (name, assignment) in imported.assignments {
-            if !registry.assignments.contains_key(&name) {
-                registry.assignments.insert(name, assignment);
+            if let std::collections::btree_map::Entry::Vacant(e) =
+                registry.assignments.entry(name)
+            {
+                e.insert(assignment);
                 added += 1;
             }
         }

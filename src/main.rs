@@ -1,8 +1,8 @@
-/// portman — Local Port Registry CLI
-///
-/// Composition root: wires infrastructure adapters to application commands.
-/// Dependency injection is done here at the top level, keeping all other
-/// layers decoupled from concrete implementations.
+//! portman — Local Port Registry CLI
+//!
+//! Composition root: wires infrastructure adapters to application commands.
+//! Dependency injection is done here at the top level, keeping all other
+//! layers decoupled from concrete implementations.
 
 mod cli;
 

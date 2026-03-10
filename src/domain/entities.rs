@@ -43,6 +43,12 @@ pub struct Registry {
     pub config: RegistryConfig,
 }
 
+impl Default for Registry {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Registry {
     pub fn new() -> Self {
         Self {

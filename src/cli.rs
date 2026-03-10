@@ -1,7 +1,7 @@
-/// Presentation Layer — CLI argument parsing via clap derive macros.
-///
-/// Enum-based dispatch: each subcommand maps to a Command variant.
-/// Global flags can be added to the Cli struct as needed.
+//! Presentation Layer — CLI argument parsing via clap derive macros.
+//!
+//! Enum-based dispatch: each subcommand maps to a Command variant.
+//! Global flags can be added to the Cli struct as needed.
 
 use clap::{Parser, Subcommand};
 
